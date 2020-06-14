@@ -1,0 +1,926 @@
+/*************************** マスター ***************************/
+
+html {
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+/*************************** 共通CSS ***************************/
+
+.ContentWidth {
+  max-width: 1040px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 19px;
+
+  position: relative;
+  z-index: 100;/* VS .CoursesArea{z-index: 1;}*/
+}
+
+.MainTitle {
+  font-size: 45px;
+}
+
+.SubTitle {
+  padding-top: 27px;
+  padding-bottom: 24px;
+  font-size: 15px;
+}
+
+.OrangeBar {
+  width: 44px;
+  border: 3px solid #f79314;
+}
+
+.Button {
+  background-color: #f79314;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 15px;
+  letter-spacing: 1.1px;
+  width: 300px;
+  height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*************************** ヘッダー ***************************/
+
+header {
+  font-size: 13px;
+  padding: 23px 0;
+  font-weight: bold;
+  text-align: center;
+
+  position: relative;
+  z-index: 10;/* VS .TopWrapper{z-index: 1;}*/
+}
+
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  height: 20px;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__item {
+  list-style: none;
+  padding:  0 17px;
+  line-height: 1.3em;
+  display: inline-block;
+}
+
+.Navbar__link {
+  text-decoration: none;
+  color: #000;
+  font-family: lato, sans-serif;
+}
+
+.Navbar__link span {
+  font-size:0.8em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.Navbar__link.Button {
+  color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 12px;
+}
+
+
+/*************************** トップ ***************************/
+
+.TopWrapper {
+  height: 791px;
+  background-image: url(images/top-hero.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: -84px;
+
+  position: relative;
+  z-index: 1;/* VS header{z-index: 10;}*/
+}
+
+.TopContainer {
+}
+
+.TopLeft {
+  width: 352px;
+  margin: 0 auto 0 0;
+}
+
+.TopHeroLogo {
+  height: 37px;
+  padding-top: 188px;
+  padding-bottom: 19px;
+}
+
+
+
+
+.TopText {
+  padding-top: 9px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+.TopText span {
+  color:#F79314;
+}
+
+.BadgeNumber {
+  height: 156px;
+  padding-top: 30px;
+}
+
+.Note {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*************************** ポテパンとは ***************************/
+
+.AboutWrapper {
+  background-color: #F79314;
+}
+
+.AboutContainer {
+  color: #fff;
+  padding-top: 79px;
+  padding-bottom: 78px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AboutLeft {
+  width: 53%;
+}
+
+
+
+.AboutLeft h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  padding-bottom: 24px;
+}
+
+.AboutLeft span {
+  font-size: 38px;
+}
+
+.AboutContainer p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.About.Button {
+  background-color: #fff;
+  color: #f79314;
+
+}
+
+.Button span:first-child {
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+.Button span:last-child {
+  font-size: 13px;
+}
+
+
+
+/*************************** 特徴 ***************************/
+
+.FeatureContainer {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+.FeatureItems {
+  text-align: center;
+  list-style: none;
+}
+
+.FeatureItem {
+  background-color: #fcfaf5;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 90px;
+  position: relative;
+}
+
+.FeatureItem__number {
+  font-size: 35px;
+  font-weight: bold;
+  color: #f79314;
+  background-color: #fcfaf5;
+  margin: 0 auto;
+  width: 95px;
+  border-radius: 50px;
+  padding: 30px 0;
+
+  position: relative;
+  top: -85px;
+  z-index: 10;
+}
+
+.FeatureItem__headline {
+  font-size: 31px;
+  margin-top: -96px;
+  margin-bottom: 38px;
+
+  position: relative;
+  z-index: 100;
+}
+
+.FeatureItem__text {
+  letter-spacing: 1.5px;
+  line-height: 32px;
+  padding-bottom: 36px;
+  font-size: 16px;
+}
+
+.FeatureItem__text span {
+  font-size: 27px;
+  color: #f79314;
+  font-weight: bold;
+}
+
+.Companies {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.Companies__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.Companies ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.Companies__headline {
+  display: inline-block;
+  border-bottom: 4px solid #f79314;
+  padding-bottom: 9px;
+}
+
+.Companies__title {
+  font-size: 24px;
+  padding-top: 39px;
+  padding-right: 8px;
+  display: inline;
+}
+
+
+.Company {
+  list-style: none;
+  width:25%;
+}
+
+.Company img {
+  width: 82%;
+}
+
+
+
+
+.Data {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.Data ul {
+  display: flex;
+  padding: 38px 10px;
+}
+
+.DataImage {
+  width: calc(100%/3);
+  list-style: none;
+  padding: 0 60px;
+}
+
+.DataImage img{
+  width: 100%;
+}
+
+
+.Engineers {
+  display: flex;
+}
+
+.Engineer {
+  background-color: #fff;
+  border-radius: 20px;
+  list-style: none;
+  margin: 7px 15px 0 15px;
+  padding: 20px 26px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Engineer__company-logo {
+  padding: 8px;
+  height: 84px;
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Engineer__company-logo img {
+  width: 100%;
+}
+
+.Engineer__profile {
+  padding-bottom: 19px;
+  align-items: center;
+
+  display: flex;
+}
+
+.Engineer__career {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.Engineer__company {
+  font-size: 13px;
+  font-weight: bold;
+  color: #f79314;
+  padding: 5px;
+}
+
+
+.Engineer__category {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.Engineer__message {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding: 20px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  text-align: start;
+}
+
+/*************************** コース ***************************/
+
+.CourseWrapper {
+  background-color: #F6F6F6;
+}
+
+.CourseContainer {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+.CoursesArea {
+  position: relative;
+  z-index: 1; /* VS .Headline{z-index: 100;}*/
+}
+
+.BgIcon {
+  width: 281px;
+  height: 275px;
+
+  position: absolute;
+  right: 0;
+  top: -225px;
+  z-index: 1;/* VS .Courses{z-index: 100;} , .Services{z-index: 100;}*/
+}
+
+.Courses {
+  position: relative;
+  z-index: 100;/* VS .BgIcon{z-index: 1;}*/
+}
+
+.Course {
+  background-color: #fff;
+  height: 100px;
+  padding: 35px 16px;
+  margin-top: 39px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Course a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Course__name {
+  width: 200px;
+  height: 53px;
+  border: 3px solid #f79314;
+  font-size: 23px;
+  color: #24211d;
+  padding: 24px 42px;
+  margin-left: -36px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Course__name.-bd-green  {
+  border: 3px solid #1bb289;
+}
+
+.Course__carrer {
+  background-color: #f75307;
+  color: #fff;
+  padding: 3px 11px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.Course__carrer.-bg-green {
+  background-color: #49c766;
+}
+
+Course__carrer.-bg-orange {
+  background-color: #ff6d00;
+}
+
+.Course__detail {
+  width: 723px;
+
+  position: relative;
+}
+
+.Course__content {
+  color: #f75307;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 19px;
+}
+
+.Course__content.-green {
+  color: #49c766;
+}
+
+.Course__content.-orange {
+  color: #f79314;
+}
+
+.Qualification__mark {
+  background-color: #212121;
+  width: 96px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+.Qualification__text:before {
+  content: '';
+  display: inline-block;
+  background-color: #F79314;
+  width: 8px;
+  height: 8px;
+  margin: 0 9px;
+  border-radius: 4px;
+}
+
+.Qualification__text {
+  padding-top: 13px;
+  padding-bottom: 23px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Course__link {
+  text-decoration: none;
+  font-size: 12px;
+
+  position: absolute;
+  right: 34px;
+  bottom: 5px;
+}
+
+.Course__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  bottom: 1px;
+  right: -17px;
+  border-right: solid 3px #F79214;
+  border-top: solid 3px #F79214;
+  transform: rotate(45deg);
+}
+
+.Course__button {
+  margin-top: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************** メッセージ ***************************/
+
+.MessageWrapper {
+  background-color: #FCFAF5;
+}
+
+
+.MessageContainer {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+.Message {
+  background-color: #fff;
+  margin-top: 70px;
+  padding: 40px 150px 40px 40px;
+
+  position: relative;
+}
+
+.Message__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Message__flex figure {
+  position: relative;
+  left: -100px;
+}
+
+.Message__flex figcaption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Message__headline {
+  font-size: 46px;
+  font-weight: bold;
+  padding: 0 35px;
+  color: #FF802C;
+  position: absolute;
+  top: -27px;
+  left: -10px;
+}
+
+.Message__text {
+  line-height: 29px;
+  font-weight: 500;
+  width: 550px;
+  margin-bottom: 36px;
+}
+
+.Message__text:last-child {
+  margin-bottom: 0px;
+}
+
+.Message__photo {
+
+}
+
+.Message__caption {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+
+.Message__caption span {
+  font-size: 24px;
+}
+
+.InterviewContainer {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+
+.Interviews {
+  margin-top: 37px;
+  margin-bottom: 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Interview {
+  list-style: none;
+  padding: 0 20px;
+  width: calc(100% / 3);
+}
+
+.Interview a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Interview__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Interview figure {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.Interview__caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+  width: calc(100% - 40px);
+  height: 35%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 30px;
+
+
+  position: absolute;
+  bottom: 0;
+}
+
+.Interview__course {
+  color: #F79314;
+  border-bottom: 1px solid #fff;
+  margin-top: 60px;
+}
+
+.Interview__caption span:last-child {
+  font-size: 13px;
+}
+
+.Interview__message {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.Interview__button {
+  margin-top: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************** サービス ***************************/
+
+.ServiceWrapper {
+  background-color: #F6F6F6;
+}
+
+.ServiceContainer {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+
+
+.Services {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 100;/*VS .BgIcon{z-index: 1;}*/
+}
+
+.Service {
+  list-style: none;
+  padding: 0 20px;
+  width: calc(100% / 3);
+}
+
+.Service a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Servece__image-container {
+  height: 190px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #FC6803;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.Servece__image-container.-green {
+  border-color: #08AF77;
+}
+
+.Servece__image-container.-black {
+  border-color: #000;
+}
+
+.Service__photo {
+  width: 100%;
+}
+
+.Service__course {
+  color: #F79314;
+  border-bottom: 1px solid #fff;
+  margin-top: 60px;
+}
+
+.Service__message {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+/*************************** フッター ***************************/
+
+footer {
+  background-color: #F79314;
+}
+
+
+.FooterContainer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: #fff;
+
+  position: relative;
+
+}
+
+.page-top-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0 12px 30px -15px;
+}
+
+.page-top-arrow {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-left: solid 3px #F79214;
+  border-top: solid 3px #F79214;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.FooterMain {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between; */
+  align-content: space-between;
+}
+
+.FooterLeft {
+  max-width: 280px;
+}
+
+.FooterLeft__company-logo {
+  width: 100%;
+}
+
+.FooterLeft__company-name {
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.FooterLeft__company-address {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.FooterLeft__icons {
+  margin-top: 35px;
+}
+
+.FooterLeft__icons img{
+  width: 60px;
+}
+
+.FooterLeft__icons img:last-child {
+  margin-left: 20px;
+}
+
+.FooterCenter {
+}
+
+.FooterCenter__links {
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.FooterCenter__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.FooterCenter__link {
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.FooterCenter__link span:last-child {
+  font-weight: normal;
+  margin-left: 1em;
+}
+
+.FooterRight {
+  margin-left: 110px;
+}
+
+.FooterRight__image {
+  width: auto;
+  height: 70px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.FooterCopyright {
+  font-size: 12px;
+  margin-top: 65px;
+}
+
+
